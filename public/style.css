@@ -17,18 +17,18 @@ body {
 
 /* Header: A Timeless Statement */
 header {
-  padding: 40px 0 20px; /* Reduced from 80px/40px for mobile */
+  padding: 40px 0 20px;
   background: #ffffff;
 }
 
 h1 {
   font-family: "Garamond", serif;
-  font-size: clamp(32px, 6vw, 48px); /* Scales between 32px and 48px */
+  font-size: clamp(32px, 6vw, 48px);
   font-weight: 700;
   letter-spacing: -1px;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 15px; /* Reduced from 20px */
+  margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
 
@@ -42,22 +42,24 @@ h1:hover {
 }
 
 .rest {
-  font-size: clamp(24px, 4vw, 32px); /* Scales between 24px and 32px */
+  font-size: clamp(24px, 4vw, 32px);
   font-weight: 400;
 }
 
 /* Navigation: Minimalist Guide */
 nav {
-  margin-top: 15px; /* Reduced from 20px */
+  margin-top: 15px;
+  white-space: nowrap; /* Prevents wrapping */
 }
 
 nav a {
   color: #000000;
   text-decoration: none;
   font-weight: 500;
-  font-size: clamp(16px, 3vw, 18px); /* Scales between 16px and 18px */
-  margin: 0 10px; /* Reduced from 20px */
+  font-size: clamp(16px, 3vw, 18px);
+  margin: 0 10px;
   transition: opacity 0.3s ease;
+  display: inline-block; /* Keeps links horizontal */
 }
 
 nav a:hover {
@@ -66,16 +68,17 @@ nav a:hover {
 
 /* Main Content: Artistic Flow */
 main {
-  max-width: 90%; /* Changed to percentage for fluidity */
+  width: 60%;
   margin: 0 auto;
   background: #ffffff;
+  padding: 0 10px;
 }
 
 main p {
-  font-size: clamp(16px, 3vw, 20px); /* Scales between 16px and 20px */
+  font-size: clamp(16px, 3vw, 20px);
   line-height: 1.8;
   color: #000000;
-  margin: 20px 10px; /* Reduced from 40px/20px */
+  margin: 20px 0;
   transition: transform 0.3s ease;
 }
 
@@ -84,21 +87,21 @@ main p:hover {
 }
 
 main p:first-child {
-  font-size: clamp(20px, 4vw, 28px); /* Scales between 20px and 28px */
+  font-size: clamp(20px, 4vw, 28px);
   font-weight: 600;
-  margin-bottom: 30px; /* Reduced from 50px */
+  margin-bottom: 30px;
 }
 
 /* Projects: Gallery Exhibits */
 .project-list {
-  margin-top: 30px; /* Reduced from 60px */
+  margin-top: 30px;
 }
 
 .project {
   background: #ffffff;
-  padding: 20px; /* Reduced from 40px */
-  margin: 20px auto; /* Reduced from 40px */
-  max-width: 90%; /* Fluid width */
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
@@ -109,17 +112,17 @@ main p:first-child {
 
 .project h2 {
   font-family: "Garamond", serif;
-  font-size: clamp(24px, 5vw, 32px); /* Scales between 24px and 32px */
+  font-size: clamp(24px, 5vw, 32px);
   font-weight: 600;
   color: #000000;
   margin-bottom: 10px;
 }
 
 .project h5 {
-  font-size: clamp(14px, 2.5vw, 18px); /* Scales between 14px and 18px */
+  font-size: clamp(14px, 2.5vw, 18px);
   font-weight: 400;
   color: #333333;
-  margin-bottom: 15px; /* Reduced from 20px */
+  margin-bottom: 15px;
 }
 
 .project a {
@@ -135,9 +138,9 @@ main p:first-child {
 
 /* Footer: Gallery Plaque */
 footer {
-  padding: 30px 0; /* Reduced from 60px */
+  padding: 30px 0;
   background: #ffffff;
-  font-size: clamp(14px, 2.5vw, 16px); /* Scales between 14px and 16px */
+  font-size: clamp(14px, 2.5vw, 16px);
   color: #000000;
 }
 
@@ -159,7 +162,7 @@ main p::before {
   width: 60px;
   height: 2px;
   background: #001f3f;
-  margin: 15px auto; /* Reduced from 20px */
+  margin: 15px auto;
   transition: width 0.3s ease;
 }
 
@@ -171,20 +174,20 @@ main p:hover::before {
 .book-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Reduced from 40px for tighter mobile layout */
-  max-width: 90%; /* Fluid width */
+  gap: 20px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px 10px; /* Reduced from 40px/20px */
+  padding: 20px 0;
   flex-wrap: wrap;
 }
 
 /* Individual Book Styling */
 .book {
-  flex: 1 1 250px; /* Grows and shrinks, min 250px */
-  max-width: 300px; /* Reduced from 350px */
+  flex: 1 1 100%;
+  max-width: 300px;
   text-align: center;
   background: #ffffff;
-  padding: 5px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -197,10 +200,10 @@ main p:hover::before {
 /* Book Header */
 .book-header {
   font-family: "Garamond", serif;
-  font-size: clamp(16px, 3vw, 20px); /* Scales between 16px and 20px */
+  font-size: clamp(16px, 3vw, 20px);
   font-weight: 600;
   color: #000000;
-  margin: 5px 0 10px; /* Reduced from 10px/15px */
+  margin: 5px 0 10px;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
@@ -212,7 +215,8 @@ main p:hover::before {
 /* Book Cover Image */
 .book-cover {
   max-width: 100%;
-  height: auto; /* Changed from 60% to auto for proportional scaling */
+  width: 100%;
+  height: auto;
   border-radius: 4px;
   transition: opacity 0.3s ease;
 }
@@ -224,7 +228,7 @@ main p:hover::before {
 /* Book Link and Download Text */
 .book p a {
   font-family: "Helvetica", Arial, sans-serif;
-  font-size: clamp(12px, 2vw, 14px); /* Scales between 12px and 14px */
+  font-size: clamp(12px, 2vw, 14px);
   color: #000000;
   text-decoration: none;
   transition: opacity 0.3s ease;
@@ -234,37 +238,7 @@ main p:hover::before {
   opacity: 0.7;
 }
 
-/* Media Query for Small Screens (Phones) */
-@media (max-width: 600px) {
-  header {
-    padding: 20px 0 10px; /* Further reduced for phones */
-  }
-
-  nav a {
-    display: block; /* Stack nav links vertically */
-    margin: 10px 0; /* Vertical spacing */
-  }
-
-  main p {
-    margin: 15px 5px; /* Tighter margins */
-  }
-
-  .project {
-    padding: 15px;
-    margin: 15px auto;
-  }
-
-  .book-container {
-    gap: 15px;
-    padding: 10px 5px;
-  }
-
-  .book {
-    min-width: 200px; /* Smaller min-width for phones */
-    max-width: 100%; /* Full width on tiny screens */
-  }
-
-  footer {
-    padding: 20px 0;
-  }
+/* Ensure viewport scaling */
+@-ms-viewport {
+  width: device-width;
 }
