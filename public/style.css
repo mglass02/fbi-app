@@ -1,0 +1,240 @@
+/* Reset defaults for a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body: The Museum Canvas */
+  body {
+    font-family: "Helvetica", Arial, sans-serif; /* Clean, modern sans-serif for body text */
+    background: #ffffff; /* Pure white background, a gallery wall */
+    color: #000000; /* Stark black for contrast */
+    overflow-x: hidden;
+    line-height: 1.6;
+    text-align: center; /* Symmetry and balance */
+  }
+  
+  /* Header: A Timeless Statement */
+  header {
+    padding: 80px 0 40px; /* Grand, airy spacing */
+    background: #ffffff; /* Blends seamlessly with body */
+  }
+  
+  h1 {
+    font-family: "Garamond", serif; /* Classical, artistic serif for elegance */
+    font-size: 48px; /* Bold, museum-worthy scale */
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #000000;
+    text-transform: uppercase; /* Commanding presence */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Subtle lift for polish */
+  }
+  
+  h1:hover {
+    transform: translateY(-5px); /* Elegant hover effect */
+  }
+  
+  .fbi {
+    font-weight: 800; /* Extra bold for FBI letters */
+    color: #001f3f; /* Deep blue accent, inspired by Rothko */
+  }
+  
+  .rest {
+    font-size: 32px; /* Slightly smaller for balance */
+    font-weight: 400; /* Lighter for contrast */
+  }
+  
+  /* Navigation: Minimalist Guide */
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 20px;
+    transition: opacity 0.3s ease;
+  }
+  
+  nav a:hover {
+    opacity: 0.7; /* Soft, refined hover */
+  }
+  
+  /* Main Content: Artistic Flow */
+  main {
+    max-width: 800px; /* Narrow, focused gallery frame */
+    margin: 0 auto;
+    background: #ffffff; /* Seamless with body */
+  }
+  
+  main p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #000000;
+    margin: 40px 20px; /* Generous spacing for breathing room */
+    transition: transform 0.3s ease;
+  }
+  
+  main p:hover {
+    transform: translateY(-3px); /* Subtle lift for interaction */
+  }
+  
+  main p:first-child {
+    font-size: 28px; /* Slightly larger for emphasis */
+    font-weight: 600; /* Bold statement */
+    margin-bottom: 50px; /* Extra space below */
+  }
+  
+  /* Projects: Gallery Exhibits */
+  .project-list {
+    margin-top: 60px;
+  }
+  
+  .project {
+    background: #ffffff; /* Seamless white */
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Subtle depth */
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-10px); /* Elegant lift on hover */
+  }
+  
+  .project h2 {
+    font-family: "Garamond", serif; /* Serif for sophistication */
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .project h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .project a {
+    color: #001f3f; /* Deep blue accent */
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project a:hover {
+    opacity: 0.7;
+  }
+  
+  /* Footer: Gallery Plaque */
+  footer {
+    padding: 60px 0;
+    background: #ffffff; /* Seamless with body */
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  footer a, a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+  }
+  
+  footer a:hover {
+    opacity: 0.7;
+  }
+  
+  /* Subtle Accent: Rothko’s Touch */
+  main p::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #001f3f; /* Deep blue for elegance */
+    margin: 20px auto;
+    transition: width 0.3s ease;
+  }
+  
+  main p:hover::before {
+    width: 80px; /* Expands slightly on hover */
+  }
+
+/* Existing styles remain unchanged */
+
+/* Existing styles remain unchanged */
+
+/* Book container styling */
+.book-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Gap between books */
+  max-width: 1000px; /* Reduced from 1200px for a tighter layout */
+  margin: 0 auto;
+  padding: 40px 20px;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+/* Individual book styling */
+.book {
+  flex: 1;
+  min-width: 250px; /* Smaller than 300px for a more compact look */
+  max-width: 350px; /* Reduced from 400px for a smaller footprint */
+  text-align: center;
+  background: #ffffff;
+  padding: 5px; /* Reduced from 20px for a tighter design */
+  border-radius: 8px; /* Curved outline instead of borders */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for outline effect */
+  transition: transform 0.3s ease;
+}
+
+.book:hover {
+  transform: translateY(-10px);
+}
+
+/* Book header */
+.book-header {
+  font-family: "Garamond", serif;
+  font-size: 20px; /* Reduced from 24px for smaller size */
+  font-weight: 600;
+  color: #000000;
+  margin: 10px 0 15px; /* Adjusted spacing for compactness */
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.book-header:hover {
+  color: #001f3f;
+}
+
+/* Book cover image */
+.book-cover {
+  max-width: 100%;
+  height: 60%;
+  border-radius: 4px; /* Curved corners to match book styling */
+  transition: opacity 0.3s ease; /* Subtle hover effect instead of border change */
+}
+
+.book-cover:hover {
+  opacity: 0.8; /* Softer hover effect without borders */
+}
+
+/* Book link and download text */
+.book p a {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 14px; /* Reduced from 16px for smaller text */
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.book p a:hover {
+  opacity: 0.7;
+}
