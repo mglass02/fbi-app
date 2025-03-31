@@ -240,10 +240,6 @@ main p:hover::before {
     padding: 20px 0 10px; /* Further reduced for phones */
   }
 
-  nav {
-    margin-top: 10px;
-  }
-
   nav a {
     display: block; /* Stack nav links vertically */
     margin: 10px 0; /* Vertical spacing */
